@@ -260,7 +260,7 @@ goalStateReached:
       for (Core::Ref<Trace> trace = next.trace; trace; trace = trace->back)
         result.push_back(trace->q);
       std::reverse(result.begin(), result.end());
-      return next.trace->p;
+      return next.p;
     } // translate()
 
     // ===========================================================================
